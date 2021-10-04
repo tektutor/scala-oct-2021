@@ -86,3 +86,29 @@ When prompts for root password, type rps@12345
 ```
 cs install scala3-repl
 ```
+Open the ~/.bashrc file using the below command
+```
+subl ~/.bashrc
+```
+
+We need to add the below line to ~/.bashrc file
+```
+export PATH="$PATH:/home/rps/.local/share/coursier/bin"
+```
+
+To apply changes done in ~/.bashrc, run the below command
+```
+source ~/.bashrc
+```
+You should be able to run the below command 
+scala3-repl from /home/rps
+
+```
+cd ~
+scala3-repl
+```
+The expected output is
+<pre>
+scala> 
+</pre>
+To come out of scala prompt, you may use Ctrl + c
