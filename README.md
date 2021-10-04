@@ -73,3 +73,15 @@ sudo mv sbt-rpm.repo /etc/yum.repos.d/
 sudo yum install -y sbt
 ```
 When prompts for root password, type rps@12345
+
+### Installing Coursier
+```
+curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
+chmod +x cs
+mv ./cs /usr/bin
+```
+
+### Installing Scala 3 Interactive Tool
+```
+cs install scala3-repl
+```
