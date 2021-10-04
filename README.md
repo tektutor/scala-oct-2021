@@ -176,9 +176,9 @@ object Main:
     val x = 10
 
     if x < 20 then
-      println ( s"$x is greater than 20" )
-    else
       println ( s"$x is smaller than 20" )
+    else
+      println ( s"$x is greater than 20" )
     end if
 
   end main
@@ -188,5 +188,5 @@ The expected output is
 <pre>
 [jegan@tektutor IfElseStatement]$ scalac main.scala 
 [jegan@tektutor IfElseStatement]$ scala main.scala 
-10 is greater than 20
+10 is smaller than 20
 </pre>
