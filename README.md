@@ -1,30 +1,40 @@
-Traditional Programming Languages
-- may support object oriented programming features
-- Class(user-defined data type)
-- Inheritance, Polymorphism, Encapsulation, Abstraction, etc.,
-- Also support multi-threading (concurrent programming)
-- Thread Synchronization Mechanisations
+### Traditional Programming Languages
+- some support procedural style programming like c, while c++, java, C#, support object oriented programming features
+- Object Oriented Programming Features
+  - Class(user-defined data type)
+  - Inheritance, Polymorphism, Encapsulation, Abstraction, etc.,
+- also support multi-threading (concurrent programming)
+- Multiple threads are used to perform concurrent operations to improve the overall performance of the application
+- But when multiple threads share a common resource, shared resources has to be accessed by multiple threads
+  in a synchronized fashion, which kind of makes the thread run one at a time.  The very purpose of engaging mutltiple threads gets defeated when we use locks to synchronize threads
+- Some commonly used Thread Synchronization Mechanisations (Locks/IPC)
   - Critical Section
   - Semaphore
   - Mutex
 
-What is Functional Programming?
+### What is Functional Programming?
+- functions are first-class citizens
+- functions can be assigned to variables as values
+- functional programming styles leads to short and crisp code
+- recommends pure functions, i.e functions without side-effects
+- pure functions are functions that return the same values irrespective of how many times they are invoked
+- lock free threads are faster compared to threads that are synchronized using locks
+- functional programming encourages you develop lock free applications by treating function arguments a immutable(read only).  Only local variables are modified, while accessing global variables are discouraged as they slow down concurrent operations.
 
-- functions are first-class citizen
-- functions can be written be written
-- functional programming short and crisp code
-- recommends pure functions
-- lock free threads - they are faster compared to threads that are synchronized using locks
-- functional programming languages encourage you develop lock free applications
-
-Scala
- - statically typed language but offers lot of features similar to dynamically typed languages
- - functional programming language
+### Scala
+ - is a statically typed language but offers many features similar to dynamically typed languages
+ - is a functional programming language that also supports Object Oriented Programming Features
+ - is also an Object Oriented Programming Language
  - suitable for concurrent programming
  - suitable for machine learning, deep learning, artificial intelligence based applications
  - ideal for developing big data applications
- - functions can accept regular data types as well functions as arguments
+ - functions can accept Int, Float, Double, Short, Long as well functions as arguments
+ - Int, Float, Double, Short, Long, BigDecimal are all Objects, hence there are no primitive data types in Scala
+   as everything is an object.
  - value of functions can be assigned to variables
+ - Higher Order Functions (HOF) - functions that take other functions are arguments
+ - Scala allows defining functions within a function, such local functions are only visible within the outer function
+
 
 ### Installing JDK 11
 ```
