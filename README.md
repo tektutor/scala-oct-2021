@@ -266,7 +266,7 @@ object Main:
     val str: String = "This is a test statement"
     
     str.toCharArray.groupBy( f => f).foreach ( f => println ( s"$f._1 occurs $f._2.size ) times" )
-'''
+```
 
 Solution - 2
 
