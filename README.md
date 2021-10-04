@@ -190,3 +190,19 @@ The expected output is
 [jegan@tektutor IfElseStatement]$ scala main.scala 
 10 is smaller than 20
 </pre>
+
+### While loop
+```
+object Main:
+  @main def demonstrateWhileLoop ( ): Unit =
+    var x = 10
+    while x < 100 do
+      print ( s"$x " )
+      x += 10
+```
+The expected output is
+<pre>
+[jegan@tektutor IfElseStatement]$ scalac while.scala 
+[jegan@tektutor IfElseStatement]$ scala while.scala 
+10 20 30 40 50 60 70 80 90
+</pre>
