@@ -228,3 +228,34 @@ Squares of List(10, 20, 30) is List(100, 400, 900)
 400
 900
 </pre>
+
+### For yield with some foreach statements
+```
+object Main:
+  @main def demonstrateForYield ( ): Unit =
+    val numbers = List ( 10, 20, 30 )
+
+    val squares = for x <- numbers yield x * x
+
+    println ( s"Squares of $numbers is $squares" )
+    //squares.foreach ( println ( _ ) )
+    //squares.foreach ( x => println ( x ) )
+    //squares.foreach ( println )
+
+    val squaresPlusFive = squares.map( x => x + 5 )
+    println ( squaresPlusFive )
+```
+The expected output is
+<pre>
+[jegan@tektutor ForYield]$ scalac main.scala 
+[jegan@tektutor ForYield]$ scala main.scala 
+Squares of List(10, 20, 30) is List(100, 400, 900)
+List(105, 405, 905)
+[jegan@tektutor ForYield]$ 
+</pre>
+
+### Find how many times each letter occurs in a given string
+```
+val s: String = "This is a test sentence"
+
+```
