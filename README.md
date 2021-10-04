@@ -81,13 +81,13 @@ object Hello:
     println (  "Hello Scala 3 !" )
 ```
 
-### Writing main entrypoing function in Scala 3 as a global function
+### Writing main entrypoint function in Scala 3 as a global function
 ```
 def main ( params: Array[String] ): Unit =
   println ( "Hello Scala 3 !!" )
 ```
 
-### Making any function as main entrypoing using @main annotoation in Scala 3
+### Making any function as main entrypoint using @main annotoation in Scala 3
 ```
 @main def hello = println ( "Hello Scala 3 !!!" )
 ```
