@@ -267,3 +267,11 @@ object Main:
     val str: String = "This is a test statement"
     
     str.toCharArray.groupBy( f => f).foreach ( f => println ( s"$f._1 occurs $f._2.size ) times" )
+
+Solution - 2
+```
+object Main:
+  def main ( args: Array[String] ) : Unit =
+    val str = "Shreesha"
+    str.distinct.foreach ( ch => println ( ch, str.count( _ == ch ) ) )
+```
