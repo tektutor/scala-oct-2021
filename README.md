@@ -209,7 +209,7 @@ The expected output is
 
 ### For yield
 ```
-ect Main:
+object Main:
   @main def demonstrateForYield ( ): Unit =
     val numbers = List ( 10, 20, 30 )
     
