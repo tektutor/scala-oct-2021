@@ -74,6 +74,24 @@ sudo yum install -y sbt
 ```
 When prompts for root password, type rps@12345
 
+### Your first program in Scala 3
+```
+object Hello:
+  def main ( params: Array[String] ): Unit =
+    println (  "Hello Scala 3 !" )
+```
+
+### Another way you can write main entrypoing function in Scala 3
+```
+def main ( params: Array[String] ): Unit =
+  println ( "Hello Scala 3 !!" )
+```
+
+### Another way you can write main entrypoint function in Scala 3
+```
+@main def hello = println ( "Hello Scala 3 !!!" )
+```
+
 ### Using for loop in Scala 3
 ```
 object Main:
