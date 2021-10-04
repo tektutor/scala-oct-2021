@@ -120,3 +120,19 @@ object Main:
     for ( i <- 0 to 10 ) do
       println ( i )
 ```
+The expected output is
+<pre>
+[jegan@tektutor Forloop]$ scalac for.scala 
+[jegan@tektutor Forloop]$ scala for.scala 
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
