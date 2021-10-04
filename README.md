@@ -40,3 +40,7 @@ tar xvfz scala3-3.1.0-RC2.tar.gz
 cd scala3-3.1.0-RC2
 pwd
 ```
+Assuming you have completed all the above instructions, you will have scala extracted in the below path
+```
+/home/rps/Downloads/scala3-3.1.0-RC2
+```
