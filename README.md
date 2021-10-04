@@ -146,10 +146,12 @@ The expected output is
 ### A slight variation of the above code in Scala 3
 ```
 object Main:
-  def main ( params: Array[String] ): Unit =
+  def main( args: Array[String] ) : Unit =
+    println ( )
     for ( i <- 0 to 10 ) do
-      print ( i + " " )
+      print ( s"$i " )
     end for
+    println ( )
   end main
 end Main
 ```
@@ -161,4 +163,8 @@ scala for.scala
 
 The expected output is
 <pre>
+[jegan@tektutor Forloop]$ scalac for1.scala 
+[jegan@tektutor Forloop]$ scala for1.scala 
+
+0 1 2 3 4 5 6 7 8 9 10 
 </pre>
