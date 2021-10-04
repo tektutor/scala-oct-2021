@@ -90,10 +90,11 @@ object Hello:
   def main ( params: Array[String] ): Unit =
     println (  "Hello Scala 3 !" )
 ```
+Scala Array is mutable(can be modified) while Scala List is immutable(read-only).
 
 ### Writing main entrypoint function in Scala 3 as a global function
 ```
-def main ( params: Array[String] ): Unit =
+def main ( args: Array[String] ): Unit =
   println ( "Hello Scala 3 !!" )
 ```
 
