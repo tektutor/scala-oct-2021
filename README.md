@@ -2,12 +2,11 @@
 - some support procedural style programming like c, while c++, java, C#, support object oriented programming features
 - Object Oriented Programming Features
   - Class(user-defined data type)
-  - Inheritance, Polymorphism, Encapsulation, Abstraction, etc.,
-- also support multi-threading (concurrent programming)
+  - Inheritance, Polymorphism, Encapsulation, Abstraction, Data hiding, access modifiers(public, protected & private)  - also support multi-threading (concurrent programming)
 - Multiple threads are used to perform concurrent operations to improve the overall performance of the application
 - But when multiple threads share a common resource, shared resources has to be accessed by multiple threads
   in a synchronized fashion, which kind of makes the thread run one at a time.  The very purpose of engaging mutltiple threads gets defeated when we use locks to synchronize threads
-- Some commonly used Thread Synchronization Mechanisations (Locks/IPC)
+- Some commonly used Thread Synchronization Mechanisms (Locks/IPC)
   - Critical Section
   - Semaphore
   - Mutex
@@ -16,10 +15,15 @@
 - functions are first-class citizens
 - functions can be assigned to variables as values
 - functional programming styles leads to short and crisp code
+- functional programming languages are close to mathematical expressions
+- functional programming languages supports anonymous functions called Lambdas
+- functional programming languages treats functions that has side-effects as impure functions
+- functional programming languages discourages use of impure functions
 - recommends pure functions, i.e functions without side-effects
 - pure functions are functions that return the same values irrespective of how many times they are invoked
+- pure functions doesn't modify any external state like writing to files, modifying an external variable/object
 - lock free threads are faster compared to threads that are synchronized using locks
-- functional programming encourages you develop lock free applications by treating function arguments as immutable(read only).  Only local variables are modified, while accessing global variables are discouraged as they require synchronization which will slow down concurrent operations.
+- functional programming languages encourages you develop lock free applications by treating function arguments as immutable(read only).  Only local variables are modified, while accessing global variables are discouraged as they require synchronization which will slow down your concurrent operations.
 
 ### Scala
  - is a statically-typed language but offers many features similar to dynamically typed languages
@@ -109,7 +113,7 @@ object Main:
   def main ( params: Array[String] ): Unit =
     for ( i <- 0 to 10 ) do
       println ( i )
-```
+```sations
 You may now compile and run the the application using the below commands
 ```
 scalac for.scala
