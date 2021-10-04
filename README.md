@@ -78,8 +78,9 @@ When prompts for root password, type rps@12345
 ```
 curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
 chmod +x cs
-mv ./cs /usr/bin
+sudo mv ./cs /usr/bin
 ```
+When prompts for root password, type rps@12345
 
 ### Installing Scala 3 Interactive Tool
 ```
