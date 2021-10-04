@@ -257,7 +257,7 @@ List(105, 405, 905)
 ```
 val s: String = "This is a test sentence"
 ```
-Solution - 1
+#### Solution - 1
 ```
 import scala.language.postfixOps
 
@@ -268,7 +268,7 @@ object Main:
     str.toCharArray.groupBy( f => f).foreach ( f => println ( s"$f._1 occurs $f._2.size ) times" )
 ```
 
-Solution - 2
+#### Solution - 2
 
 ```
 object Main:
@@ -277,7 +277,7 @@ object Main:
     str.distinct.foreach ( ch => println ( ch, str.count( _ == ch ) ) )
 ```
 
-### Solution 3
+#### Solution 3
 ```
 object Main:
   def main ( args: Array[String] ) : Unit =
