@@ -19,12 +19,13 @@
 - recommends pure functions, i.e functions without side-effects
 - pure functions are functions that return the same values irrespective of how many times they are invoked
 - lock free threads are faster compared to threads that are synchronized using locks
-- functional programming encourages you develop lock free applications by treating function arguments a immutable(read only).  Only local variables are modified, while accessing global variables are discouraged as they slow down concurrent operations.
+- functional programming encourages you develop lock free applications by treating function arguments as immutable(read only).  Only local variables are modified, while accessing global variables are discouraged as they require synchronization which will slow down concurrent operations.
 
 ### Scala
- - is a statically typed language but offers many features similar to dynamically typed languages
+ - is a statically-typed language but offers many features similar to dynamically typed languages
  - is a functional programming language that also supports Object Oriented Programming Features
  - is also an Object Oriented Programming Language
+ - also works like a scripting language
  - suitable for concurrent programming
  - suitable for machine learning, deep learning, artificial intelligence based applications
  - ideal for developing big data applications
@@ -34,7 +35,6 @@
  - value of functions can be assigned to variables
  - Higher Order Functions (HOF) - functions that take other functions are arguments
  - Scala allows defining functions within a function, such local functions are only visible within the outer function
-
 
 ### Installing JDK 11
 ```
@@ -158,7 +158,7 @@ The expected output is
 0 1 2 3 4 5 6 7 8 9 10 
 </pre>
 
-### If statement
+### If then else statement
 ```
 object Main:
   def main ( args: Array[String] ) : Unit =
@@ -196,7 +196,7 @@ The expected output is
 10 20 30 40 50 60 70 80 90
 </pre>
 
-### For yield
+### For with yield
 ```
 object Main:
   @main def demonstrateForYield ( ): Unit =
@@ -227,9 +227,10 @@ object Main:
     val squares = for x <- numbers yield x * x
 
     println ( s"Squares of $numbers is $squares" )
-    //squares.foreach ( println ( _ ) )
-    //squares.foreach ( x => println ( x ) )
-    //squares.foreach ( println )
+    //You may use any one of the below lines as they all do the same stuff. Just differents ways of printing a List
+    squares.foreach ( println ( _ ) )
+    squares.foreach ( x => println ( x ) )
+    squares.foreach ( println )
 
     val squaresPlusFive = squares.map( x => x + 5 )
     println ( squaresPlusFive )
