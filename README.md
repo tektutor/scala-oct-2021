@@ -31,3 +31,11 @@ Scala
 sudo yum install -y java-11-openjdk-devel
 ```
 When prompted for admin password, type rps@12345
+
+### Installing Scala 3
+```
+cd ~/Downloads
+wget https://github.com/lampepfl/dotty/releases/download/3.1.0-RC2/scala3-3.1.0-RC2.tar.gz
+tar xvfz scala3-3.1.0-RC2.tar.gz
+scala3-3.1.0-RC2.tar.gz
+```
