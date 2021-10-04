@@ -168,3 +168,25 @@ The expected output is
 
 0 1 2 3 4 5 6 7 8 9 10 
 </pre>
+
+### If statement
+```
+object Main:
+  def main ( args: Array[String] ) : Unit =
+    val x = 10
+
+    if x < 20 then
+      println ( s"$x is greater than 20" )
+    else
+      println ( s"$x is smaller than 20" )
+    end if
+
+  end main
+end Main
+```
+The expected output is
+<pre>
+[jegan@tektutor IfElseStatement]$ scalac main.scala 
+[jegan@tektutor IfElseStatement]$ scala main.scala 
+10 is greater than 20
+</pre>
