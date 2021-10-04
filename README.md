@@ -120,10 +120,16 @@ object Main:
     for ( i <- 0 to 10 ) do
       println ( i )
 ```
+You may now compile and run the the application using the below commands
+```
+scalac for.scala
+scala for.scala
+```
+
 The expected output is
 <pre>
-[jegan@tektutor Forloop]$ scalac for.scala 
-[jegan@tektutor Forloop]$ scala for.scala 
+[jegan@tektutor Forloop]$ <b>scalac for.scala</b>
+[jegan@tektutor Forloop]$ <b>scala for.scala</b>
 0
 1
 2
