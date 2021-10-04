@@ -87,7 +87,7 @@ def main ( params: Array[String] ): Unit =
   println ( "Hello Scala 3 !!" )
 ```
 
-### Making any function as main entrypoint using @main annotoation in Scala 3
+### Making any function as main entrypoint using @main annotation in Scala 3
 ```
 @main def hello = println ( "Hello Scala 3 !!!" )
 ```
