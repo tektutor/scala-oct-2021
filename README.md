@@ -251,7 +251,6 @@ The expected output is
 [jegan@tektutor ForYield]$ scala main.scala 
 Squares of List(10, 20, 30) is List(100, 400, 900)
 List(105, 405, 905)
-[jegan@tektutor ForYield]$ 
 </pre>
 
 ### Find how many times each letter occurs in a given string
@@ -267,8 +266,10 @@ object Main:
     val str: String = "This is a test statement"
     
     str.toCharArray.groupBy( f => f).foreach ( f => println ( s"$f._1 occurs $f._2.size ) times" )
+'''
 
 Solution - 2
+
 ```
 object Main:
   def main ( args: Array[String] ) : Unit =
