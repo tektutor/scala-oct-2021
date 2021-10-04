@@ -50,6 +50,7 @@ subl ~/.bashrc
 ```
 You need to append the below lines leaving the existing lines intact
 ```
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.12.0.7-0-el8_4.x86_64
 export SCALA_HOME=/home/rps/Downloads/scala3-3.1.0-RC2
 export PATH=$JAVA_HOME/bin:$SCALA_HOME/bin:$PATH
 ```
