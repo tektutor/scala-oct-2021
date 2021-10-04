@@ -30,3 +30,4 @@ Scala
 ```
 sudo yum install -y java-11-openjdk-devel
 ```
+When prompted for admin password, type rps@12345
