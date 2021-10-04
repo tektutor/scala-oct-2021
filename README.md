@@ -206,3 +206,25 @@ The expected output is
 [jegan@tektutor WhileLoop]$ scala while.scala 
 10 20 30 40 50 60 70 80 90
 </pre>
+
+### For yield
+```
+ect Main:
+  @main def demonstrateForYield ( ): Unit =
+    val numbers = List ( 10, 20, 30 )
+    
+    val squares = for x <- numbers yield x * x
+    
+    println ( s"Squares of $numbers is $squares" )
+    squares.foreach ( x => println ( x ) )
+```
+
+The expected output is
+<pre>
+[jegan@tektutor ForYield]$ <b>scalac main.scala</b>
+[jegan@tektutor ForYield]$ <b>scala main.scala</b>
+Squares of List(10, 20, 30) is List(100, 400, 900)
+100
+400
+900
+</pre>
