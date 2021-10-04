@@ -44,3 +44,12 @@ Assuming you have completed all the above instructions, you will have scala extr
 ```
 /home/rps/Downloads/scala3-3.1.0-RC2
 ```
+You need to add the SCALA_HOME path to your rps home .bashrc file as shown below
+```
+subl ~/.bashrc
+```
+You need to append the below lines leaving the existing lines intact
+```
+export SCALA_HOME=/home/rps/Downloads/scala3-3.1.0-RC2
+export PATH=$JAVA_HOME/bin:$SCALA_HOME/bin:$PATH
+```
