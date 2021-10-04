@@ -112,3 +112,11 @@ The expected output is
 scala> 
 </pre>
 To come out of scala prompt, you may use Ctrl + c
+
+### Using for loop in Scala 3
+```
+object Main:
+  def main ( params: Array[String] ): Unit =
+    for ( i <- 0 to 10 ) do
+      println ( i )
+```
