@@ -142,3 +142,23 @@ The expected output is
 9
 10
 </pre>
+
+### A slight variation of the above code in Scala 3
+```
+object Main:
+  def main ( params: Array[String] ): Unit =
+    for ( i <- 0 to 10 ) do
+      print ( i + " " )
+    end for
+  end main
+end Main
+```
+You may now compile and run the the application using the below commands
+```
+scalac for.scala
+scala for.scala
+```
+
+The expected output is
+<pre>
+</pre>
