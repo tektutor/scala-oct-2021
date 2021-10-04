@@ -202,7 +202,7 @@ object Main:
 ```
 The expected output is
 <pre>
-[jegan@tektutor IfElseStatement]$ scalac while.scala 
-[jegan@tektutor IfElseStatement]$ scala while.scala 
+[jegan@tektutor WhileLoop]$ scalac while.scala 
+[jegan@tektutor WhileLoop]$ scala while.scala 
 10 20 30 40 50 60 70 80 90
 </pre>
