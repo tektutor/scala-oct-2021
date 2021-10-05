@@ -290,5 +290,16 @@ object Main:
 
     println ( "Printing distinct items in the map ..." )
     val distinctOccurrencesMap = occurrences.distinct
-    for ( (key,value) <- distinctOccurrencesMap ) println ( s"$key occurred $value times." )                                                                                        
+    for ( (key,value) <- distinctOccurrencesMap ) println ( s"$key occurred $value times." )                                                                                  
+```
+#### Solution 4
+```
+object Main:
+  def main ( args: Array[String] ): Unit =
+    var s: String = "This is a test sentence"
+    val map = scala.collection.mutable.Map[Char,Int]
+    for ( char <- s ) do
+      map(char) = map.get(char).getOrElse(0)
+    for (char, count) <- map do
+      println ( s"$char -> $count" )
 ```
