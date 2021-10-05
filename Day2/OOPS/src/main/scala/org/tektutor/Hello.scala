@@ -11,3 +11,6 @@ object Main:
   @main def invokeHello() =
     val hello = Hello()
     hello.sayHello()
+
+    hello.msg = "Hello World"
+    hello.sayHello()
