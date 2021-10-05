@@ -134,11 +134,61 @@ object Main:
     //flatMap
     println ( "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++") 
     println ( "\nUnderstanding flatMap operation in a list")
-    val myList2 = List ( "Hello", "World" )
+    val myList2 = List ( "Hello", "World" ) 
     println ( "\nBefore map")
     println ( myList2 )
-    println ( "After myList1.flatMap( _.toLowerCase )" )
+    println ( "After myList1.flatMap( _.toLowerCase )" ) // mapping first "hello", "world" flattening next
     println ( myList2.flatMap ( _.toLowerCase ) )
 
+    val listOfNumbers = List ( List(1,2,3), List(4,5,6) )
+    println ( "\nBefore flatMap")
+    println ( listOfNumbers )
+    println ( "\nAfter flatMap ")
+    println ( listOfNumbers.flatMap ( _.map( _ * 2) ) ) //First it applies mapping functionality on each list then it is flattening both lists
+    //println ( listOfNumbers.flatMap ( _ * 2  ) )
+    //
+
+    val someList = List ( 1,2,3 )
+    println ( someList )
+    println ( someList.flatMap ( x => List(x,x+1) ) )
+    println (( someList.map ( x => List(x,x+1) ) ).flatten)
+    //secondList =  List ( 2, 4, 6 ) ( 1,2,3)
+
     //reduceLeft
+    println ( "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++") 
+    println ( "\nUnderstanding reduceLeft operation in a list")
+    println ( "\nBefore reduceLeft")
+    println ( l2 )
+    println ( "\nAfter l2.reduceLeft ( _ + _ )" )
+    println ( l2.reduceLeft( _ + _ ) )
+
+    //reduceRight
+    println ( "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++") 
+    println ( "\nUnderstanding reduceRight operation in a list")
+    println ( "\nBefore reduceRight")
+    println ( l2 )
+    println ( "\nAfter l2.reduceRight( _ + _ )" )
+    println ( l2.reduceRight( _ + _ ) )
+
+    val words = List( "Hello","World","Three","Four" )
+    println ( words )
+    println ( words.reduceLeft( _ + _ ) )
+    println ( words.reduceRight( _ + _ ) )
+
+    //foldLeft
+    println ( "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++") 
+    println ( "\nUnderstanding foldLeft operation in a list")
+    println ( "\nBefore foldLeft")
+    println ( l2 )
+    println ( "\nAfter foldLeft(45)( _ + _ )")
+    println ( l2.foldLeft(45)( _ + _ ) )
+
+    //foldRight
+    println ( "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++") 
+    println ( "\nUnderstanding foldLeft operation in a list")
+    println ( "\nBefore foldRight")
+    println ( l2 )
+    println ( "\nAfter l2.foldRight(45)( _ + _ )")
+    println ( l2.foldRight(45)( _ + _ ) )
+
 
