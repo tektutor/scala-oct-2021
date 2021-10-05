@@ -290,9 +290,11 @@ object Main:
 
     println ( "Printing distinct items in the map ..." )
     val distinctOccurrencesMap = occurrences.distinct
-    for ( (key,value) <- distinctOccurrencesMap ) println ( s"$key occurred $value times." )                                                                                  
+    for ( (key,value) <- distinctOccurrencesMap ) println ( s"$key occurred $value times." )                         
 ```
+
 #### Solution 4
+
 ```
 object Main:
   def main ( args: Array[String] ): Unit =
