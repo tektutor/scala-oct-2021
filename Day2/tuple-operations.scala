@@ -7,7 +7,7 @@ object Main:
     val t1 = ( 1, "DevOps", Duration("5 days" ) )
 
     println ("\nUnderstanding Tuple")
-    println ("      -has one or more fields similar to Database table records.\n")
+    println ("      -has one or more hetrogeneous fields similar to Database table records.\n")
     println ("Let us say, there is a tuple t1 as shown below ...")
     println (s"\t $t1")
 
