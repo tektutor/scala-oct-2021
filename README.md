@@ -113,7 +113,7 @@ object Main:
   def main ( params: Array[String] ): Unit =
     for ( i <- 0 to 10 ) do
       println ( i )
-```sations
+```
 You may now compile and run the the application using the below commands
 ```
 scalac for.scala
