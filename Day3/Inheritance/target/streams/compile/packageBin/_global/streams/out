@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/inheritance_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/IPhone.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/IPhone.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/IPhone.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/IPhone.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/demonstrateInheritance.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/demonstrateInheritance.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/demonstrateInheritance.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/demonstrateInheritance.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Mobile.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/Mobile.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Mobile.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes/org/tektutor/Mobile.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

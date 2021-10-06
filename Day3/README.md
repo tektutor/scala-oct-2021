@@ -1,0 +1,35 @@
+### Executing the Inheritance lab exercise
+```
+cd ~/scala-oct-2021
+git pull
+cd Day3/Inheritance
+sbt compile
+sbt run
+```
+
+The expected output is
+<pre>
+jegan@tektutor Inheritance]$ ls
+build.sbt  src
+[jegan@tektutor Inheritance]$ sbt compile
+[info] Updated file /home/jegan/scala-oct-2021/Day3/Inheritance/project/build.properties: set sbt.version to 1.5.5
+[info] welcome to sbt 1.5.5 (Red Hat, Inc. Java 11.0.12)
+[info] loading project definition from /home/jegan/scala-oct-2021/Day3/Inheritance/project
+[info] loading settings for project inheritance from build.sbt ...
+[info] set current project to inheritance (in build file:/home/jegan/scala-oct-2021/Day3/Inheritance/)
+[info] Executing in batch mode. For better performance use sbt's shell
+[info] compiling 3 Scala sources to /home/jegan/scala-oct-2021/Day3/Inheritance/target/scala-3.1.0-RC2/classes ...
+[success] Total time: 4 s, completed Oct 5, 2021, 10:23:05 PM
+[jegan@tektutor Inheritance]$ sbt run
+[info] welcome to sbt 1.5.5 (Red Hat, Inc. Java 11.0.12)
+[info] loading project definition from /home/jegan/scala-oct-2021/Day3/Inheritance/project
+[info] loading settings for project inheritance from build.sbt ...
+[info] set current project to inheritance (in build file:/home/jegan/scala-oct-2021/Day3/Inheritance/)
+[info] running org.tektutor.demonstrateInheritance 
+Name : iPhone13
+Camera   : 20 Mega Pixel Rear Camera, 10 Mega Pixel Front Camera
+Bluetooh : true
+WIFi     : true
+[success] Total time: 1 s, completed Oct 5, 2021, 10:23:16 PM
+[jegan@tektutor Inheritance]$ 
+</pre>
