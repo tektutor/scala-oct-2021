@@ -1,3 +1,11 @@
+### In case you haven't clone the TekTutor scala-oct-2021 repository yet, you may do now
+```
+cd ~
+git clone https://github.com/tektutor/scala-oct-2021.git
+cd scala-oct-2021
+```
+You are have the latest code !
+
 ### Executing the Inheritance lab exercise
 ```
 cd ~/scala-oct-2021
