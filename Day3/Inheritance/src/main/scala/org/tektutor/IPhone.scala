@@ -1,7 +1,15 @@
 package org.tektutor
 
-class IPhone(name: String, camera: String, bluetooth: Boolean, wifi : Boolean ) 
-  extends Mobile( name ):
+class IPhone(x : Int, name: String, camera: String, bluetooth: Boolean, wifi : Boolean ) 
+  extends Mobile( x, name ):
+
+  var y: Int = 0 
+
+  //Auxiliary constructor on the subclass
+  def this ( somey : Int , x : Int, name: String, camera: String, bluetooth: Boolean, wifi : Boolean ) =
+     this( x, name, camera, bluetooth, wifi ) //Invoking local Primary constructor i.e IPhone's primary constructor
+     y = somey
+
 
   override def printDetails(): Unit =
     super.printDetails()

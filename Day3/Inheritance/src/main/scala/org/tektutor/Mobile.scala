@@ -1,6 +1,13 @@
 package org.tektutor
 
-class Mobile ( protected var name : String ):
+case class Mobile ( name : String ):
+
+  var x : Int = 0
+
+  //Auxiliary contructor
+  def this ( someX : Int, name : String ) =
+    this( name ) //Calling Local Primary constructor of Mobile
+    x = someX
 
   private def parentPrivateMethod() =
     println ( "Parent - Mobile private method ..." )
