@@ -9,7 +9,7 @@ object Main:
     println ( "Method B invoked" )
     return x
 
-  def methodC( x : Double) : Int =
+  def methodC( x : Double) : Double = // f: Double=>Double
     println ( "Method C invoked" )
     return x
   
