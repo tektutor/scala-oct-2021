@@ -47,3 +47,7 @@ WIFi     : true</b>
 - Chid auxiliary constructor must invoke the local primary constructor as the first statement
 - However, the Child class when it extends can choose to invoke either the Primary constructor of Parent, or any
   of the auxiliary constructors of Parent
+  
+### Is it possible to invoke the Parent constructor arguments in a jumbled fashion
+- the straight answer is not possible
+- however using named arguments you can invoke the constructors with parameters supplied in any order
