@@ -44,7 +44,7 @@ WIFi     : true</b>
 
 ### Can the child auxiliary constructor invoke Parent auxiliary constructors directly?
 - No, Scala doesn't allow Child auxiliary constructors to invoke Parent auxiliary constructor.
-- Chid auxiliary constructor must invoke the local primary constructor as the first statement
+- Child auxiliary constructor must invoke the local primary constructor as their first statement
 - However, the Child class when it extends can choose to invoke either the Primary constructor of Parent, or any
   of the auxiliary constructors of Parent
   
