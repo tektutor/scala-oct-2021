@@ -12,7 +12,7 @@ sudo systemctl status mysqld
 ```
 You need to press letter 'q'
 
-#### Updating root passwof
+#### Updating root password
 ```
 mysql_secure_installation
 ```
