@@ -1,7 +1,7 @@
 ### Installing MySQL Server in CentOS
 ```
 sudo yum install -y epel-release
-sudo yum install -y mysqld
+sudo yum install -y @mysql
 ```
 
 #### Starting mysql server
