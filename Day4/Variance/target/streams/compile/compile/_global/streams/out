@@ -1,6 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /home/jegan/scala-oct-2021/Day4/Variance/src/main/scala/org/tektutor/Main.scala:27:2 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m  [33mvar[0m [36mcars[0m: [35mMap[K,V][0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |  [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |covariant [33mtype[0m [35mV[0m occurs in contravariant position in type Map[K, V] of [33mparameter[0m [35mcars_=[0m[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
