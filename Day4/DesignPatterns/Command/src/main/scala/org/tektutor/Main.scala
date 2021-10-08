@@ -69,7 +69,6 @@ class UniversalRemote:
     this()
     _name = name 
 
-
     turnOnCommands += new TVTurnOn(tv)
     turnOnCommands += new ACTurnOn(ac)
     turnOnCommands += new BlueRayPlayerOn(player)

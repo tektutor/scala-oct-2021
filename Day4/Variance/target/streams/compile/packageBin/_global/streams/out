@@ -1,0 +1,33 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/variance_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/CarFactory.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/CarFactory.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/CarFactory.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/CarFactory.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/demonstrateVariance.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/demonstrateVariance.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/demonstrateVariance.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/demonstrateVariance.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Car.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/Car.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Car.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/Car.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/Main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/Main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/Main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/BMW.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/BMW.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/BMW.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/BMW.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Audi.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/Audi.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Audi.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/Variance/target/scala-3.1.0-RC2/classes/org/tektutor/Audi.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

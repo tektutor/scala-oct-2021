@@ -1,0 +1,92 @@
+S - Single Responsibility Principle (SRP)
+O - Open Closed Priniciple (OCP)
+L - Liskov Substitution Principle (LSP)
+I - Interface Seggregation
+D - Dependency Injection/Dependency Inversion/Invertion of Control (IOC)
+
+Good Design
+  - Loosely coupled
+  - Strongly Cohessive
+
+Inheritance Benefits
+  - Polymorphism 
+  - Code Reuse
+
+Inheritance Drawbacks
+  - it makes your code strongly coupled
+  - it makes your classes weakly cohessive
+
+Code Smells
+   - structurally bad code
+   - code that functionally works but not well-written
+   - bad code
+       - adding new functionality is difficult
+       - understanding code is difficult
+       - modifying the code breaks unrelated functionalities
+       - code that doesn't have automated test cases are also bad code
+       - no naming conventions followed
+       - 1000 lines of code in a function/method
+       - a class/trait having 50 or more methods
+       - nested if/else, switch case
+       - static cling - too much use of static variables/methods
+       - strongly coupled code
+
+Single Responsibility Principle(SRP)
+++++++++++++++++++++++++++++++++++++
+ - a class/trait/interface should represent only one thing
+ - a function/method should do just one thing
+
+ In case your design violates this principles
+   - a class/trait violates SRP then it would be large class(Code smell)
+   - a method offers two functionailities
+       - long method (code smell)
+ Refactor
+   - you may break the class/interface that has more one responsibility
+     into multiple small class/interface so that they represent just
+     one thing
+ 
+Open Closed Principle (OCP)
++++++++++++++++++++++++++++
+- a design should be open for enhancement 
+- you be able to add new functionality without modifying existing code
+
+Refactor
+  - base classes should only have common functionalities, no specific behaviour should be added
+    in traits/abstract class/base class
+  -  
+
+Interface Seggregation
+  - Rather than one interface reprenting many entities
+  - We can create many traits that represents individual entity
+
+trait Mobile
+  def wifi
+  def bluetooth
+  def camera
+  
+
+nokia basic mobile  
+
+
+Liskov Substitution Principle (LSP)
+ if your code requires to check an object type whether it is instance of JSONFileReader
+ it means it violates LSP- Code smell 
+
+ def doWork ( reader: FileReader )
+
+ FileReader - Base Class
+  - open Method doesn't throw any exception  
+
+  JSONFileReader
+  YAMLFileReader - open method overrident in this subclass throws an exception
+  XMLFileReader
+
+Dependency Injection
+  - Your code will be loosely coupled
+  - You can test your code independent of its dependencies
+  - Dependencies of your class can be mocked out to test your class
+
+Design Violating this DI
+  - will be strongly coupled
+  - it will be difficult to enhance, because change in one class will affect many other classes
+     

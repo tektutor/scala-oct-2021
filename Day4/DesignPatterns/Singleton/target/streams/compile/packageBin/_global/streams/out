@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/singleton_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/DBManager.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor/DBManager.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/DBManager.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor/DBManager.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/DBManager$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor/DBManager$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor/Main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor/Main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/Main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor/Main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/demonstrateSingleton.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor/demonstrateSingleton.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	org/tektutor/demonstrateSingleton.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jegan/scala-oct-2021/Day4/DesignPatterns/Singleton/target/scala-3.1.0-RC2/classes/org/tektutor/demonstrateSingleton.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

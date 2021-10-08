@@ -23,7 +23,7 @@ object Main:
     l.addItem ( 30 )
     l.printList()
 
-    //Here MyList takes type Int as a Parameter
+    //Here MyList takes type String as a Parameter
     val daysOfWeek = MyList[String]
     daysOfWeek.addItem ( "Monday" )
     daysOfWeek.addItem ( "Tuesday" )

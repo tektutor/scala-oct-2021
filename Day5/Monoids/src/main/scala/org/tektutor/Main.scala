@@ -1,0 +1,24 @@
+package org.tektutor
+
+object WordCount 
+  case class WordCount(word: String, count: Int)
+  def wordCount(s: String): Map[String, Int] =
+    s.split("\\s+")
+      .map(x => WordCount(x, 1))
+      .groupBy(w => w.word)
+      .map(x => (x._1 -> x._2.foldLeft(0)((a, c) => c.count + a)))
+      .toMap
+
+object MapMonoidInstance {
+  implicit def mapMonoid[K, V: Numeric]: Monoid[Map[K, V]] = 
+    new Monoid[Map[K, V]] {
+      override def zero: Map[K, V] = Map()
+      override def op(l: Map[K, V], r: => Map[K, V]): Map[K, V] = 
+        l.keySet.union(r.keySet)
+          .map(k =>(k -> implicitly[Numeric[V]].plus(
+                      l.getOrElse(k, implicitly[Numeric[V]].zero),
+                      r.getOrElse(k, implicitly[Numeric[V]].zero)))).toMap
+
+object DemonstrateMonoids extends App
+  def frequency(wordCounts: Map[String, Int] *)(implicit monoid: Monoid[Map[String, Int]]): Map[String, Int] =
+    wordCounts.foldLeft(monoid.zero)(monoid.op(_, _))

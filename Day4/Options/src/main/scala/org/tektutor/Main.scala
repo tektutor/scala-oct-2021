@@ -8,7 +8,7 @@ class Course( name: String, duration: Option[String] ):
     s"$name -> $msg"
 
 class TekTutor:
-  var courses = new ArrayBuffer[Course]()
+  val courses = new ArrayBuffer[Course]()
   def addCourse ( course : Course ) = courses += course
   def printCourses( ) = print ( courses )
 
