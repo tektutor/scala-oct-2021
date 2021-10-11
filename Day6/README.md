@@ -43,6 +43,26 @@ cd Day6/MonadsAndMonoids
 sbt compile && sbt run
 ```
 
+### What is Covariant?
+Assume there are 3 classes, Car, BMW and Audi.  BMW and Audi classes extends Car.
+Covariance allows substitution of the below
+<pre>
+List[Car] with List[BMW] 
+List[Car] with List[Audi]
+</pre>
+
+### What is Contravariant?
+Assume there are 3 classes, Car, BMW and Audi.  BMW and Audi classes extends Car.
+Contravariant alows substitution of the below
+<pre>
+List[BMW] with List[Car]
+List[Audi] with List[Car]
+</pre>
+
+### What is Invariant?
+If Neither covariant or contravariant is defined for a type, they are by default invariant.
+For example List[BMW] can't be substituted for List[Audi] as they are invariant.  They don't participate in Inheritance hierarchy.
+
 ### Executing Covariant lab exercise
 ```
 cd ~/scala-oct-2021
