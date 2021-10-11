@@ -5,7 +5,10 @@ object DBAppDemo extends App :
   val driver = "com.mysql.jdbc.Driver"
   val username = "root"
   val password = "root"
+
+  //Assigns default value based on the type of the variable
   var connection:Connection = _
+
   try 
     Class.forName(driver)
     connection = DriverManager.getConnection(url, username, password)

@@ -2,10 +2,10 @@ package org.tektutor
 
 class MyThread(name: String) extends Thread:
   override def run() =
-    for count <- Range(1,10) do
-    println ( s"\nInside $name => $count" )
-    Thread.sleep(1)
-    Thread.`yield`()
+    for count <- Range(1,10000) do
+      println ( s"\nInside $name => $count" )
+      Thread.sleep(1)
+      Thread.`yield`()
 
 @main def demonstrateThreads =
   val t1 = new MyThread("Thread-1")

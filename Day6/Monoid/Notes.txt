@@ -1,0 +1,59 @@
+Monoid
+ A + B + C
+
+A monoid should support the below rules
+1. Should support associativity
+2. If add an identity element the operation should result in same number
+
+Addition Operation is a monoidal operation
+++++++++++++++++++++++++++++++++++++++++++
+ Associativity 
+    A + ( B + C ) = (A+B) + C
+   1 +  ( 5 + 6)  = (1+5) + 6
+   12 = 12
+  
+ Identity Number for Addition
+    0 + 100 = 100
+   100 + 0  = 100
+
+Subtraction Operation is not a  monoid
+Associativity
+  A - B is not equal to B - A
+  5 - 6 = 6 - 5 (False - They are not equal)
+
+Multiplication Operation
+1.  Identity element for Multiplication is 1
+ 
+  5 x 1 = 5
+  1 x 5 = 5
+
+2. A x ( B x C ) = ( A x B ) x C
+   5 x ( 2 x 3 ) = ( 5 x 2 ) x 3
+   5 x 6         = 10 x 3
+   30 = 30
+
+List loanSanctioned( 100000, 200000, 50000 )
+loanSanctioned.for ( _ <- ( _ + _ ) )
+
+SBI Branch 1 in Delhi( FY 2020/21 )
+1 Crore INR
+Future {
+  loanSanctioned.for ( _ <- ( _ + _ ) )
+}
+
+SBI Branch 2 in Delhi( FY 2020/21
+2 Crore INR
+
+PNB Branch 1 in Delhi ( FY 2020/21 )
+50 Lakhs
+
+
+
+
+
+
+
+
+
+
+  

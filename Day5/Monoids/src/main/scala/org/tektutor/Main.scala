@@ -1,24 +1,49 @@
 package org.tektutor
 
-object WordCount 
-  case class WordCount(word: String, count: Int)
-  def wordCount(s: String): Map[String, Int] =
-    s.split("\\s+")
-      .map(x => WordCount(x, 1))
-      .groupBy(w => w.word)
-      .map(x => (x._1 -> x._2.foldLeft(0)((a, c) => c.count + a)))
-      .toMap
+case class Money(dollars: Int, cents: Int)
 
-object MapMonoidInstance {
-  implicit def mapMonoid[K, V: Numeric]: Monoid[Map[K, V]] = 
-    new Monoid[Map[K, V]] {
-      override def zero: Map[K, V] = Map()
-      override def op(l: Map[K, V], r: => Map[K, V]): Map[K, V] = 
-        l.keySet.union(r.keySet)
-          .map(k =>(k -> implicitly[Numeric[V]].plus(
-                      l.getOrElse(k, implicitly[Numeric[V]].zero),
-                      r.getOrElse(k, implicitly[Numeric[V]].zero)))).toMap
+trait Data {
+  val balance = Money(102, 44)
+  val salary = Money(320, 0)
+  val balances: Map[String, Money] = Map(
+    "James" –> Money(212, 98),
+    "Jimmy" –> Money(43, 44)
+  )
 
-object DemonstrateMonoids extends App
-  def frequency(wordCounts: Map[String, Int] *)(implicit monoid: Monoid[Map[String, Int]]): Map[String, Int] =
-    wordCounts.foldLeft(monoid.zero)(monoid.op(_, _))
+  val salaries: Map[String, Money] = Map(
+    "James" –> Money(500, 98),
+    "Jimmy" –> Money(500, 44)
+  )
+
+  val marbles: Map[String, Int] = Map(
+    "James" –> 4,
+    "Jimmy" –> 5
+  )
+
+  val won: Map[String, Int] = Map(
+    "James" –> 2,
+    "Jimmy" –> 1
+  )
+}
+
+object DemonstrateMonoid extends App {
+
+  implicit val moneyMonoid = new Monoid[Money] {
+    override def empty: Money = Money(0, 0)
+
+    override def combine(x: Money, y: Money): Money = {
+      Money(x.dollars + y.dollars + ((x.cents + y.cents) / 100),
+        (x.cents + y.cents) % 100)
+    }
+  }
+
+  val lastYearExpenses = List(Money(3, 4), Money(34, 5), Money(12, 0))
+
+  def totalAllExpenses(expenses: List[Money])(implicit m: Monoid[Money]): Money = {
+    expenses.foldLeft(m.empty){
+      case (acc, money) => m.combine(acc, money)
+    }
+  }
+
+  println(s"LastYearExpenses : ${totalAllExpenses(lastYearExpenses)}")
+}
