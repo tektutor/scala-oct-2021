@@ -17,9 +17,11 @@ For example, 0 is an identify element for addition
 </pre>
 
 Whereas Subtraction operations doesn't support associativity rule
+<pre>
 i.e 100 - 1 is not same as 1 - 100 
 100 -1  = +99
 1 - 100 = -99
+</pre>
 
 #### Practical use-cases of Monoids
 - In order to perform certain operations in a concurrent fashion across many threads in different servers the operation must be Monadic.
