@@ -2,17 +2,13 @@ package org.tektutor
 
 trait Topping {
     def getName() : String
-
     def getPrice() : Double
-
     def addTopping() : Topping
 }
 
 class BasePizza extends Topping {
     def getName() : String = "Pizza"
-
     def getPrice() : Double = 77.0
-
     def addTopping() : Topping = this
 }
 
@@ -40,11 +36,8 @@ class OnionTopping(override val topping : Topping) extends ToppingDecorator(topp
 
 class ToppingDecorator(val topping : Topping) extends Topping {
     var nextTopping : Topping = topping
-
     def getName() : String = nextTopping.getName()
-
     def getPrice() : Double = nextTopping.getPrice()
-
     def addTopping() : Topping = this
 }
 
@@ -79,5 +72,18 @@ class Pizza {
     }
 }
 
+object DemonstrateDecorator extends App:
 
+   val pizza = new Pizza()
+   println ( "Pizza : " + pizza.getName() )
+   println ( s"Prize : ${pizza.getPrice()}" )
+   pizza.addNewTopping( "Onion" )
+   println ( "Pizza : " + pizza.getName() )
+   println ( s"Prize : ${pizza.getPrice()}" )
+   pizza.addNewTopping( "Cheese" )
+   println ( "Pizza : " + pizza.getName() )
+   println ( s"Prize : ${pizza.getPrice()}" )
+   pizza.addNewTopping( "Cheese" )
 
+   println ( "Pizza : " + pizza.getName() )
+   println ( s"Prize : ${pizza.getPrice()}" )
